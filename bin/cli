@@ -11,6 +11,6 @@ fs.readFile(path.resolve(__dirname, '../desmotivacionais.txt'), function(err, da
 		var desmotivacionais = data.toString().split('\n');
 		var desmotivacional = desmotivacionais[Math.floor(Math.random() * desmotivacionais.length)];
 		console.log(desmotivacional.replace(/<\/br>/g,'\n'));
-		winsay.speakSync(null, desmotivacional);
+		winsay.speakSync(null, desmotivacional.replace(/<\/br>/g,'\n'));
 	}
 });
