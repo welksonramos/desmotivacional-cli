@@ -1,0 +1,24 @@
+{
+  "name": "desmotivacional-cli",
+  "version": "0.1.0",
+  "description": "Poderia criar uma descrição para este projeto... mas estava muito desmotivado para tal",
+  "preferGlobal": true,
+  "bin": {
+    "desmotivacional": "./bin/cli"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "emotions",
+    "cli"
+  ],
+  "author": "Welkson Ramos <welksonr@hotmail.com>",
+  "license": "MIT",
+  "engines":{
+    "node":">=0.12.0 < 4.0.0"
+    },
+  "dependencies": {
+    "winsay": "0.0.4"
+  }
+}

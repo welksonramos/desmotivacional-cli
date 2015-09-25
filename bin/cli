@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var path = require('path');
+var winsay = require('winsay');
+var pkg = require('../package.json');
+
+fs.readFile(path.resolve(__dirname, '../desmotivacionais.txt'), function(err, data){
+	if(err) throw err;
+	else {
+		var desmotivacionais = data.toString().split('\n');
+		var desmotivacional = desmotivacionais[Math.floor(Math.random() * desmotivacionais.length)];
+		console.log(desmotivacional.replace(/<\/br>/g,'\n'));
+		winsay.speakSync(null, desmotivacional);
+	}
+});
