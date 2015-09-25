@@ -1,6 +1,6 @@
 {
   "name": "desmotivacional-cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Poderia criar uma descrição para este projeto... mas estava muito desmotivado para tal",
   "preferGlobal": true,
   "bin": {
