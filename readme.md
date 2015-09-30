@@ -1,6 +1,6 @@
 # Desmotivacional-cli
 
-> Poderia criar uma descrição para este projeto... mas estava muito desmotivado para tal
+>  Mensagens desmotivacionais via linha de comando
 
 ## Instalação
 
