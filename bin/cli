@@ -5,10 +5,10 @@ var path = require('path');
 var winsay = require('winsay');
 var pkg = require('../package.json');
 
-fs.readFile(path.resolve(__dirname, '../desmotivacionais.txt'), function(err, data){
+fs.readFile(path.resolve(__dirname, '../desmotivacionais.json'), function(err, data){
 	if(err) throw err;
 	else {
-		var desmotivacionais = data.toString().split('\n');
+		var desmotivacionais = data.toString().split(',');
 		var desmotivacional = desmotivacionais[Math.floor(Math.random() * desmotivacionais.length)];
 		console.log(desmotivacional.replace(/<\/br>/g,'\n'));
 		winsay.speakSync(null, desmotivacional.replace(/<\/br>/g,'\n'));
