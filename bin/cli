@@ -1,16 +1,29 @@
 #!/usr/bin/env node
 
-var fs = require('fs');
-var path = require('path');
-var winsay = require('winsay');
-var pkg = require('../package.json');
+var program = require('commander'),
+		winsay = require('winsay'),
+		desmotivacionais = require('../'),
+		desmotivacional = desmotivacionais.random().replace(/<\/br>/g, '\n'),
+		pkg = require('../package.json');
 
-fs.readFile(path.resolve(__dirname, '../desmotivacionais.json'), function(err, data){
-	if(err) throw err;
-	else {
-		var desmotivacionais = data.toString().split('\n');
-		var desmotivacional = desmotivacionais[Math.floor(Math.random() * desmotivacionais.length)];
-		console.log(desmotivacional.replace(/<\/br>/g,'\n'));
-		winsay.speakSync(null, desmotivacional.replace(/<\/br>/g,'\n'));
-	}
-});
+		program
+		.version(pkg.name +' v'+pkg.version)
+		.usage('desmotivacional [options]')
+		.option('-a, --all', 'Displays all phrases')
+		program.on('--help', function(){
+			console.log('Ex: desmotivacional');
+			console.log('or');
+			console.log('Ex: desmotivacional --all');
+			console.log('...');
+		});
+		program.parse(process.argv);
+
+if(program.args.length >= 1) program.help();
+
+if(program.all){
+	console.log(desmotivacionais.all.join('\n').replace(/<\/br>/g, '\n'));
+}
+else {
+	console.log(desmotivacional);
+	winsay.speakSync(null, desmotivacional);
+}
