@@ -16,12 +16,12 @@
   "author": "Welkson Ramos <welksonr@hotmail.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=0.12.0 < 4.0.0"
+    "node": ">=0.12.0"
   },
   "dependencies": {
     "commander": "^2.9.0",
     "unique-random-array": "^1.0.0",
-    "winsay": "0.0.4"
+    "winsay": "0.0.5"
   },
   "devDependencies": {
     "tape": "^4.2.2"
