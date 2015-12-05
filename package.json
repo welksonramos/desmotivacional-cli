@@ -1,6 +1,6 @@
 {
   "name": "desmotivacional-cli",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Mensagens desmotivacionais via linha de comando",
   "preferGlobal": true,
   "bin": {
