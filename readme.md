@@ -48,4 +48,4 @@ desmotivacional --all
  * Baseado em [Desmotivacional](https://github.com/flaviotruzzi/desmotivacional) criado por [flaviotruzzi](https://github.com/flaviotruzzi)
 
 ## License
- Copyright (c) 2015, Welkson Ramos. Licensed under the [MIT License](LICENSE).
+ Copyright (c) 2015-2016, Welkson Ramos. Licensed under the [MIT License](LICENSE).
