@@ -20,8 +20,8 @@
   },
   "dependencies": {
     "commander": "^2.9.0",
-    "unique-random-array": "^1.0.0",
-    "winsay": "0.0.5"
+    "say": "^0.14.0",
+    "unique-random-array": "^1.0.0"
   },
   "devDependencies": {
     "tape": "^4.2.2"

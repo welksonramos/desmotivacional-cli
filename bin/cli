@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var program = require('commander'),
-		winsay = require('winsay'),
+		say = require('say'),
 		desmotivacionais = require('../'),
 		desmotivacional = desmotivacionais.random().replace(/<\/br>/g, '\n'),
 		pkg = require('../package.json');
@@ -25,5 +25,5 @@ if(program.all){
 }
 else {
 	console.log(desmotivacional);
-	winsay.speakSync(null, desmotivacional);
+	say.speak(desmotivacional);
 }
