@@ -1,29 +1,32 @@
 #!/usr/bin/env node
 
-var program = require('commander'),
-		say = require('say'),
-		desmotivacionais = require('../'),
-		desmotivacional = desmotivacionais.random().replace(/<\/br>/g, '\n'),
-		pkg = require('../package.json');
+const program = require('commander');
+const say = require('say');
+const desmotivacionais = require('../');
+const desmotivacional = desmotivacionais.random().replace(/<\/br>/g, '\n');
 
-		program
-		.version(pkg.name +' v'+pkg.version)
-		.usage('desmotivacional [options]')
-		.option('-a, --all', 'Displays all phrases')
-		program.on('--help', function(){
-			console.log('Ex: desmotivacional');
-			console.log('or');
-			console.log('Ex: desmotivacional --all');
-			console.log('...');
-		});
-		program.parse(process.argv);
+const pkg = require('../package.json');
+const log = console.log;
+
+program
+.version(`${pkg.name} v${pkg.version}`)
+.usage('desmotivacional [options]')
+.option('-a, --all', 'Displays all phrases')
+
+program.on('--help', function(){});
+
+program.parse(process.argv);
 
 if(program.args.length >= 1) program.help();
 
 if(program.all){
-	console.log(desmotivacionais.all.join('\n').replace(/<\/br>/g, '\n'));
+    log(desmotivacionais.all.join('\n').replace(/<\/br>/g, '\n'));
 }
 else {
-	console.log(desmotivacional);
-	say.speak(desmotivacional);
+    log(desmotivacional);
+    say.speak(desmotivacional, 1.0, (err)=>{
+        if(err){
+            return log(err);
+        }
+    });
 }
