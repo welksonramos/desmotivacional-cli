@@ -1,5 +1,6 @@
 # Desmotivacional-cli
-[![Build Status](https://travis-ci.org/welksonramos/desmotivacional-cli.svg?branch=master)](https://travis-ci.org/welksonramos/desmotivacional-cli) [![npm version](https://img.shields.io/npm/v/desmotivacional-cli.svg)](https://www.npmjs.com/package/desmotivacional-cli) [![license](https://img.shields.io/npm/l/desmotivacional-cli.svg?style=flat)](https://raw.github.com/welksonramos/desmotivacional-cli/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/welksonramos/desmotivacional-cli.svg?branch=master)](https://travis-ci.org/welksonramos/desmotivacional-cli) [![npm version](https://img.shields.io/npm/v/desmotivacional-cli.svg)](https://www.npmjs.com/package/desmotivacional-cli) [![dependencies Status](https://david-dm.org/welksonramos/desmotivacional-cli/status.svg)](https://david-dm.org/welksonramos/desmotivacional-cli) [![license](https://img.shields.io/npm/l/desmotivacional-cli.svg?style=flat)](https://raw.github.com/welksonramos/desmotivacional-cli/blob/master/LICENSE)
+
 >  Mensagens desmotivacionais via linha de comando
 
 ## Instalação
@@ -48,4 +49,4 @@ desmotivacional --all
  * Baseado em [Desmotivacional](https://github.com/flaviotruzzi/desmotivacional) criado por [flaviotruzzi](https://github.com/flaviotruzzi)
 
 ## License
- Copyright (c) 2015-2016, Welkson Ramos. Licensed under the [MIT License](LICENSE).
+Licensed under the [MIT License](LICENSE).
