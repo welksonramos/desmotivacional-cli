@@ -19,12 +19,12 @@
     "node": ">=0.12.0"
   },
   "dependencies": {
-    "commander": "^2.9.0",
-    "say": "^0.14.0",
-    "unique-random-array": "^1.0.0"
+    "commander": "^2.19.0",
+    "say": "^0.15.0",
+    "unique-random-array": "^1.0.1"
   },
   "devDependencies": {
-    "tape": "^4.2.2"
+    "tape": "^4.10.1"
   },
   "main": "index.js",
   "repository": {
