@@ -20,7 +20,7 @@ program.parse(process.argv);
 if(program.args.length >= 1) program.help();
 
 if(program.all){
-    log(desmotivacionais.all.join('\n').replace(/<\/br>/g, '\n'));
+    log(desmotivacionais.all.join('\n'));
 }
 else {
     log(desmotivacional);
