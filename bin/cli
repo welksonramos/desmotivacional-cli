@@ -3,7 +3,7 @@
 const program = require('commander');
 const say = require('say');
 const desmotivacionais = require('../');
-const desmotivacional = desmotivacionais.random().replace(/<\/br>/g, '\n');
+const desmotivacional = desmotivacionais.random();
 
 const pkg = require('../package.json');
 const log = console.log;
