@@ -1,7 +1,7 @@
 'use strict';
 
-var desmotivacionais = require('./'),
-		test = require('tape');
+const desmotivacionais = require('./');
+const test = require('tape');
 
 test('Return a random word', function(t){
 	t.ok(desmotivacionais.random(), 'check if return one word');
