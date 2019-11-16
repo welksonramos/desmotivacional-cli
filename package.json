@@ -4,7 +4,7 @@
   "description": "Mensagens desmotivacionais via linha de comando",
   "preferGlobal": true,
   "bin": {
-    "desmotivacional": "./bin/cli"
+    "desmotivacional": "./lib/desmotivacionais.js"
   },
   "scripts": {
     "test": "tape test.js"
