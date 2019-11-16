@@ -1,4 +1,6 @@
-[
+"use strict";
+
+module.exports = [
 	"A inteligência artificial não é páreo para a estupidez natural!",
 	"A tendência é piorar.",
 	"A vida é curta e mesmo assim você vai continuar trabalhando em projetos bosta.",
