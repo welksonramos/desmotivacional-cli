@@ -3,10 +3,9 @@
 import quotes from "./quotes.js";
 import uniqueRandomArray from "unique-random-array";
 
-const desmotivacionais = quotes;
-const random = uniqueRandomArray(desmotivacionais);
-
+const all = quotes;
+const random = uniqueRandomArray(all);
 export default {
-  desmotivacionais,
+  all,
   random
 };
