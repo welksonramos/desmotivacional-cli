@@ -1,6 +1,5 @@
 'use strict';
 
-// const desmotivacionais = require('./desmotivacionais.json');
 const desmotivacionais = require('./quotes');
 const uniqueRandomArray = require('unique-random-array');
 
