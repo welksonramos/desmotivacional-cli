@@ -19,8 +19,10 @@
   "author": "Welkson Ramos <welksonr@hotmail.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=8"
+    "node": ">=12"
   },
+  "type": "module",
+  "exports": "./index.js",
   "dependencies": {
     "commander": "^7.2.0",
     "say": "^0.16.0",

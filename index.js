@@ -1,7 +1,12 @@
-'use strict';
+"use strict";
 
-const desmotivacionais = require('./quotes');
-const uniqueRandomArray = require('unique-random-array');
+import quotes from "./quotes.js";
+import uniqueRandomArray from "unique-random-array";
 
-module.exports.all = desmotivacionais;
-module.exports.random = uniqueRandomArray(desmotivacionais);
+const desmotivacionais = quotes;
+const random = uniqueRandomArray(desmotivacionais);
+
+export default {
+  desmotivacionais,
+  random
+};

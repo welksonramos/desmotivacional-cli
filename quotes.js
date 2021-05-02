@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = [
+export default [
 	"A inteligência artificial não é páreo para a estupidez natural!",
 	"A tendência é piorar.",
 	"A vida é curta e mesmo assim você vai continuar trabalhando em projetos bosta.",
@@ -68,7 +68,7 @@ module.exports = [
 	"Uns têm dinheiro, outros tem beleza e você... tem que estudar",
 	"Vai dar merda.",
 	"Você já deveria estar magro de tanto que corre atrás da felicidade.",
-	"Você nasceu para ser feito de otário.", 
+	"Você nasceu para ser feito de otário.",
 	"Você nunca vai conseguir.",
 	"Você precisa só de uma mãozinha...Bem no meio da fuça!",
 	"Você só faz peso na terra.",
