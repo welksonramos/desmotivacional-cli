@@ -1,5 +1,5 @@
 # Desmotivacional-cli :speech_balloon: :pensive:
-[![Build Status](https://travis-ci.org/welksonramos/desmotivacional-cli.svg?branch=master)](https://travis-ci.org/welksonramos/desmotivacional-cli) [![npm version](https://img.shields.io/npm/v/desmotivacional-cli.svg)](https://www.npmjs.com/package/desmotivacional-cli) [![dependencies Status](https://david-dm.org/welksonramos/desmotivacional-cli/status.svg)](https://david-dm.org/welksonramos/desmotivacional-cli) [![license](https://img.shields.io/npm/l/desmotivacional-cli.svg?style=flat)](https://raw.github.com/welksonramos/desmotivacional-cli/blob/master/LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![CI](https://github.com/welksonramos/desmotivacional-cli/actions/workflows/main.yml/badge.svg)](https://github.com/welksonramos/desmotivacional-cli/actions/workflows/main.yml) [![npm version](https://img.shields.io/npm/v/desmotivacional-cli.svg)](https://www.npmjs.com/package/desmotivacional-cli) [![dependencies Status](https://david-dm.org/welksonramos/desmotivacional-cli/status.svg)](https://david-dm.org/welksonramos/desmotivacional-cli) [![license](https://img.shields.io/npm/l/desmotivacional-cli.svg?style=flat)](https://raw.github.com/welksonramos/desmotivacional-cli/blob/master/LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 >  Mensagens desmotivacionais via linha de comando
@@ -14,8 +14,10 @@
 
  ```js
 import desmotivacional from "desmotivacional-cli";
+
 desmotivacional.random()
-=> Não desanime com a derrota de hoje. Amanhã tem outra.
+
+// Não desanime com a derrota de hoje. Amanhã tem outra.
  ```
 ## CLI
  
@@ -36,17 +38,19 @@ desmotivacional.random()
 ### Exemplos:
 
 ```bash
-desmotivacional
-=> Para de bater p** pra desenho
+$ desmotivacional
+
+# Para de bater p** pra desenho
+
 ```
 **Exibe todas as frases**
 
-```
-desmotivacional --all
-=> ...
-=> As pessoas só te incentivam para rir do seu fracasso.
-=> Seus sonhos nunca se realizarão.
-=> ...
+```bash
+$ desmotivacional --all
+# ...
+# As pessoas só te incentivam para rir do seu fracasso.
+# Seus sonhos nunca se realizarão.
+# ...
 ```
 
  * Baseado em [Desmotivacional](https://github.com/flaviotruzzi/desmotivacional) criado por [flaviotruzzi](https://github.com/flaviotruzzi)
