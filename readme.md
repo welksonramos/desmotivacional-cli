@@ -13,7 +13,7 @@
 ## Uso
 
  ```js
-const desmotivacional = require('desmotivacional-cli');
+import desmotivacional from "desmotivacional-cli";
 desmotivacional.random()
 => Não desanime com a derrota de hoje. Amanhã tem outra.
  ```
@@ -28,10 +28,10 @@ desmotivacional.random()
 ### Opções
  
  ```bash
- -h, --help     output usage information
- -V, --version  output the version number
- -a, --all      display all phrases
- -s, --speak    Speak a unique quote
+ -a, --all      Exibe todas as frases
+ -l, --listen   Ouça uma frase única
+ -V, --version  Exibe o número da versão
+ -h, --help     Exibe informações de uso
  ```
 ### Exemplos:
 
