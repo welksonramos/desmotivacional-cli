@@ -24,7 +24,7 @@
   "type": "module",
   "exports": "./index.js",
   "dependencies": {
-    "commander": "^7.2.0",
+    "commander": "^8.2.0",
     "say": "^0.16.0",
     "unique-random-array": "^3.0.0"
   },
